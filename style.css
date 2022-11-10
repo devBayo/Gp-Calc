@@ -3,39 +3,50 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .container {
-  /* width: 100%;
-  max-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
   max-width: 600px;
-  background: #f3f7f8;
+  background-color: #f3f7f8;
   width: 600px;
   padding: 20px;
 }
 
-.semester {
+.wrap {
   width: 100%;
   max-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: white;
+  background-color: #ffffff;
 }
-.subject {
+
+.flex {
   display: flex;
-  align-items: center;
-  width: 100%;
+  flex-direction: row;
   justify-content: space-between;
+}
+
+.add {
+  text-decoration: none;
+  display: inline;
+  width: 5px;
+  height: 5px;
+  background: white;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #056965;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
