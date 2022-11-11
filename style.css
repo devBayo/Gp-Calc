@@ -30,23 +30,75 @@ body {
   background-color: #ffffff;
 }
 
-.flex {
+.sems {
+  color: #191a66;
+  font-weight: 900;
+  margin: 20px;
+}
+
+.coursegrp {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  justify-self: center;
+  gap: 150px;
+}
+
+.flex {
+  display: flex;
+  gap: 1.5em;
+  margin-bottom: 15px;
+}
+
+.add-course {
+  border: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  margin: 15px auto;
 }
 
 .add {
-  text-decoration: none;
-  display: inline;
-  width: 5px;
-  height: 5px;
-  background: white;
-  font-size: 2rem;
-  font-weight: lighter;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  padding: auto;
+  background: #fff;
+  border: 0.5px solid #056965;
+  text-align: center;
+  font: 14px Arial, sans-serif;
   color: #056965;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
+}
+
+.add1 {
+  font: 12px Arial, sans-serif;
+  font-weight: 700;
+  margin-left: 5px;
+  color: #056965;
+}
+
+.delete {
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  padding: 5px auto;
+  background: #fff;
+  border: 0.5px solid #056965;
+  text-align: center;
+  font: 15px Arial, sans-serif;
+  color: #056965;
+  cursor: pointer;
+}
+
+input {
+  padding: 4px 5px;
+  background: #f3f7f8;
+  width: 50%;
+  border: none;
+}
+
+input:focus {
+  outline: 1px solid #056965;
 }

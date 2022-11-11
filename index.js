@@ -1,4 +1,4 @@
-const addBtn = document.querySelector(".add");
+const addBtn = document.querySelector(".add-course");
 
 const input = document.querySelector(".inp-group");
 
@@ -11,12 +11,18 @@ function addInput() {
   name.type = "text";
   name.placeholder = "Eg. Advanced Calculus";
 
-  const values = ["A", "B", "C", "D", "E", "F"];
+  const values = ["Select", "A", "B", "C", "D", "E", "F"];
 
   const select = document.createElement("select");
   select.type = "select";
   select.placeholder = "select";
 
+  for (let i = 0; i < values.length; i++) {
+    let option = document.createElement("option");
+    option.value = values[i];
+    option.innerHTML = values[i];
+    select.appendChild(option);
+  }
   const credit = document.createElement("input");
   credit.type = "text";
   credit.placeholder = "Eg. 20";
