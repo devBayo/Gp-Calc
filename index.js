@@ -1,5 +1,7 @@
 const addBtn = document.querySelector(".add-course");
 
+const removeBtn = document.querySelector(".remove-course");
+
 const input = document.querySelector(".inp-group");
 
 function removeInput() {
@@ -43,4 +45,9 @@ function addInput() {
   flex.appendChild(btn);
 }
 
+function clearThis() {
+  input.innerHTML = "";
+}
+
 addBtn.addEventListener("click", addInput);
+removeBtn.addEventListener("click", clearThis);
