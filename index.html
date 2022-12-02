@@ -17,7 +17,36 @@
           <p>Grade</p>
           <p>Credits</p>
         </div>
-        <div class="inp-group"></div>
+        <div class="inp-group">
+          <div class="flex">
+            <input type="text" placeholder="Eg. Advanced Calculus" />
+            <select class="grade">
+              <option value="">Select</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+            </select>
+            <input type="number" class="score" placeholder="Eg. 20" />
+            <button type="button" class="delete">&times;</button>
+          </div>
+          <div class="flex">
+            <input type="text" placeholder="Eg. Advanced Calculus" />
+            <select class="grade">
+              <option value="">Select</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+              <option value="F">F</option>
+            </select>
+            <input type="number" class="score" placeholder="Eg. 20" />
+            <button type="button" class="delete">&times;</button>
+          </div>
+        </div>
         <div class="btn-4">
           <button class="add-course">
             <span class="add">&plus;</span>
@@ -31,10 +60,10 @@
       </div>
       <div class="overall">
         <h3>Overall GPA</h3>
-        <h3>0.00</h3>
+        <h3 class="gpa-value">0.00</h3>
       </div>
       <div class="btn-3">
-        <button class="btn-l">Calculate</button>
+        <button class="btn-l btn-calculate">Calculate</button>
         <button class="btn-2">Add Semester</button>
       </div>
     </div>
